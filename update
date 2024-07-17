@@ -4,7 +4,7 @@ chsh -s /usr/bin/zsh
 
 cp ~/tdots/conf/.zshrc ~
 
-sudo cp ~/tdots/tup /bin
+sudo ln -s ~/tdots/update /bin/update
 
 cd ~/tdots
 ~/tdots/sync
