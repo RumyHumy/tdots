@@ -1,0 +1,9 @@
+#!/bin/bash
+
+chsh -s /usr/bin/zsh
+
+cp ~/tdots/conf/.zshrc ~
+
+sudo cp ~/tdots/tup /bin
+
+~/tdots/sync
