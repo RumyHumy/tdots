@@ -6,4 +6,5 @@ cp ~/tdots/conf/.zshrc ~
 
 sudo cp ~/tdots/tup /bin
 
+cd ~/tdots
 ~/tdots/sync
