@@ -3,6 +3,7 @@
 chsh -s /usr/bin/zsh
 
 cp ~/tdots/conf/.zshrc ~
+cp ~/tdots/conf/nvim/* ~/.config/nvim
 
 sudo ln -s ~/tdots/update /bin/update
 
