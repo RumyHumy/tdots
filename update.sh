@@ -6,7 +6,5 @@ cp ~/tdots/conf/.zshrc ~
 mkdir -p ~/.config/nvim
 cp -r ~/tdots/conf/nvim/* ~/.config/nvim
 
-sudo ln -s ~/tdots/update /bin/update
-
 cd ~/tdots
-~/tdots/sync
+~/tdots/sync.sh
