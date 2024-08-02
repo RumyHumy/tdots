@@ -77,3 +77,4 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 
 # Workaround that bug with % sign
 clear
+echo "WHAT?\n"
