@@ -1,5 +1,4 @@
-# Luke's config for the Zoomer Shell
-
+# Rami's take on Luke's config for the Zoomer Shell
 # Aliases
 alias ls='ls --color=auto'
 
@@ -18,7 +17,8 @@ autoload -U compinit
 zstyle ':completion:*' menu select
 zmodload zsh/complist
 compinit
-_comp_options+=(globdots)		# Include hidden files.
+# Include hidden files.
+_comp_options+=(globdots)
 
 # vi mode
 bindkey -v
@@ -74,3 +74,7 @@ bindkey '^e' edit-command-line
 
 # Load zsh-syntax-highlighting; should be last.
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
+
+# Workaround that bug with % sign
+echo "\x1b[2J\x1b[H"
+echo "WHAT?\n"
