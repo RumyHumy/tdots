@@ -76,5 +76,5 @@ bindkey '^e' edit-command-line
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
 
 # Workaround that bug with % sign
+echo "\n"
 clear
-echo "WHAT?\n"
