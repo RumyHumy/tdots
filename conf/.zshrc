@@ -76,4 +76,4 @@ bindkey '^e' edit-command-line
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
 
 # Workaround that bug with % sign
-echo "\x1b[2J\x1b[H"
+clear
