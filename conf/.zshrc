@@ -78,3 +78,4 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 # Workaround that bug with % sign
 echo "\n"
 clear
+echo "\n"
