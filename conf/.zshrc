@@ -77,4 +77,3 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 
 # Workaround that bug with % sign
 echo "\x1b[2J\x1b[H"
-echo "WHAT?\n"
