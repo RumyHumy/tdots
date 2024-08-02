@@ -2,5 +2,8 @@
 :set shiftwidth=4
 :set tabstop=4
 
-nmap Y "+y
-vmap Y "+y
+" " Copy to clipboard
+vnoremap  <leader>y  "+y
+nnoremap  <leader>Y  "+yg_
+nnoremap  <leader>y  "+y
+nnoremap  <leader>yy  "+yymap Y "+y
