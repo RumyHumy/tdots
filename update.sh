@@ -1,6 +1,8 @@
 #!/bin/bash
 
-chsh -s /usr/bin/zsh
+if [[ -z "$ZSH_VERSION" ]]; then
+	chsh -s /usr/bin/zsh
+fi
 
 cp ~/tdots/conf/.zshrc ~
 mkdir -p ~/.config/nvim
