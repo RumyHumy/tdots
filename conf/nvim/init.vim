@@ -1,6 +1,7 @@
 set relativenumber
 set shiftwidth=4
 set tabstop=4
+set background=transparent
 
 let mapleader=";"
 
