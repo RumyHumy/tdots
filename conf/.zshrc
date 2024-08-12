@@ -1,6 +1,7 @@
 # Rami's take on Luke's config for the Zoomer Shell
 # Aliases
 alias ls='ls --color=auto'
+alias tree='tree --color=auto'
 
 # Enable colors and change prompt:
 autoload -U colors && colors
