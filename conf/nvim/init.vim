@@ -2,7 +2,7 @@ set relativenumber
 set shiftwidth=4
 set tabstop=4
 set termguicolors
-set background=none
+set background=lightgray
 
 let mapleader=";"
 
