@@ -11,7 +11,7 @@ mkdir -p ~/.config/nvim
 cp -r ~/tdots/conf/nvim/* ~/.config/nvim
 
 mkdir -p ~/.config/lf
-cp -r ~/tdots/conf/lf/.lfrc ~/.config/lf
+cp -r ~/tdots/conf/lf/lfrc ~/.config/lf
 
 cd ~/tdots
 ~/tdots/sync.sh
