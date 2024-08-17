@@ -6,8 +6,12 @@ if [[ $(echo $SHELL | awk -F/ '{print $NF}') != "zsh" ]]; then
 fi
 
 cp ~/tdots/conf/.zshrc ~
+
 mkdir -p ~/.config/nvim
 cp -r ~/tdots/conf/nvim/* ~/.config/nvim
+
+mkdir -p ~/.config/lf
+cp -r ~/tdots/conf/lf/* ~/.config/lf
 
 cd ~/tdots
 ~/tdots/sync.sh
