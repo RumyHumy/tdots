@@ -5,13 +5,17 @@ if [[ $(echo $SHELL | awk -F/ '{print $NF}') != "zsh" ]]; then
 	chsh -s /usr/bin/zsh
 fi
 
-cp ~/tdots/conf/.zshrc ~
+#cp ~/tdots/conf/.zshrc ~
+rm ~/.zshrc
+ln -s ~/tdots/conf/.zshrc ~/.zshrc
 
+#cp -r ~/tdots/conf/nvim/* ~/.config/nvim
 mkdir -p ~/.config/nvim
-cp -r ~/tdots/conf/nvim/* ~/.config/nvim
+ln -s ~/tdots/conf/nvim/init.vim
 
+#cp -r ~/tdots/conf/lf/lfrc ~/.config/lf
 mkdir -p ~/.config/lf
-cp -r ~/tdots/conf/lf/lfrc ~/.config/lf
+ln -s ~/tdots/conf/lf/lfrc ~/.config/lf/lfrc
 
 cd ~/tdots
 ~/tdots/sync.sh
