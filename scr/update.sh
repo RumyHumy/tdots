@@ -1,9 +1,6 @@
 #!/bin/bash
 
-if [[ ! $(echo $SHELL | awk -F/ '{print $NF}') != "zsh" ]]; then
-	echo "zsh is the default shell"
-	chsh -s /usr/bin/zsh
-fi
+[ ! -n "$ZSH_VERSION" ] && chsh -s /usr/bin/zsh
 
 rm ~/.zshrc
 ln -s ~/tdots/conf/zshrc ~/.zshrc
