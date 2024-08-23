@@ -6,7 +6,7 @@ git status | grep -q "nothing to commit"
 
 if [ $? -eq 0 ]; then
     echo "[TDOTS] Nothing to sync!"
-	exit 0
+	exit 1
 fi
 
 git pull
