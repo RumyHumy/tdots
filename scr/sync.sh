@@ -2,10 +2,12 @@
  
 cd ~/tdots
 
-if git status | grep -q "Your branch is up to date"; then
-    echo "up"
+git fetch origin
+
+if [ $(git rev-list --count HEAD..origin/main) -gt 0 ]; then
+    echo "nah"
 else
-    echo "not"
+    echo "k"
 fi
 
 git pull
