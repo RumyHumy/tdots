@@ -2,12 +2,12 @@
  
 cd ~/tdots
 
-git status | grep -q "nothing to commit"
+git status | grep -q "nothing to commit" ; echo $?
 
-#if [ ! -z $? ]; then
-#    echo "[TDOTS] Nothing to sync!"
-#	exit 0
-#fi
+if [[ "0" -ne $? ]]; then
+    echo "[TDOTS] Nothing to sync!"
+	exit 0
+fi
 
 git pull
 git add *
