@@ -2,14 +2,12 @@
  
 cd ~/tdots
 
-git fetch origin
+git status | grep -q "nothing to commit"
 
-git status | grep -q "nothing to commit, working tree clean"
-
-if ![ -z $? ]; then
-    echo "[TDOTS] Nothing to sync!"
-	exit 0
-fi
+#if [ ! -z $? ]; then
+#    echo "[TDOTS] Nothing to sync!"
+#	exit 0
+#fi
 
 git pull
 git add *
