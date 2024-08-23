@@ -6,14 +6,12 @@ git fetch origin
 
 git status | grep -q "nothing to commit, working tree clean"
 
-if [ -z $@ ]; then
-    echo "nah"
-else
-    echo "k"
+if [ -z $? ]; then
+    echo "[TDOTS] Nothing to sync!"
+	exit;
 fi
 
 git pull
 git add *
 git commit -am "$(date)"
 git push
-
