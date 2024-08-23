@@ -1,6 +1,6 @@
 # Rami's take on Luke's config for the Zoomer Shell
 # Aliases
-if [[ -d "~/tdots" ]]; then
+if [ -d "~/tdots" ]; then
 	alias td ="cd ~/tdots"
 	alias tdc="cd ~/tdots/conf"
 	alias tds="cd ~/tdots/scr"
