@@ -4,7 +4,9 @@ cd ~/tdots
 
 git fetch origin
 
-if [ $(git rev-list --count HEAD..origin/main) -gt 0 ]; then
+git status | grep -q "nothing to commit, working tree clean"
+
+if [ -z $@ ]; then
     echo "nah"
 else
     echo "k"
