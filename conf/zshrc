@@ -1,5 +1,7 @@
 # Rami's take on Luke's config for the Zoomer Shell
 # Aliases
+alias tdu="~/tdots/scr/update.sh"
+alias ls="ls --color=auto"
 
 # Enable colors and change prompt:
 autoload -U colors && colors
