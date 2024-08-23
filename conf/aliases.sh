@@ -1,3 +1,4 @@
 #!/bin/sh
 
-alias ls="ls color=auto"
+alias tdu="~/tdots/scr/update.sh"
+alias ls="ls --color=auto"
