@@ -2,9 +2,9 @@
  
 cd ~/tdots
 
-git status | grep -q "nothing to commit" ; echo $?
+git status | grep -q "nothing to commit"
 
-if [ $? -ne 0 ]; then
+if [ $? -eq 0 ]; then
     echo "[TDOTS] Nothing to sync!"
 	exit 0
 fi
