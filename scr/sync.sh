@@ -4,7 +4,7 @@ cd ~/tdots
 
 git status | grep -q "nothing to commit" ; echo $?
 
-if [[ "0" -ne $? ]]; then
+if [[ -z $? ]]; then
     echo "[TDOTS] Nothing to sync!"
 	exit 0
 fi
