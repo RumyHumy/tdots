@@ -8,7 +8,7 @@ git status | grep -q "nothing to commit, working tree clean"
 
 if [ -z $? ]; then
     echo "[TDOTS] Nothing to sync!"
-	exit;
+	exit 0
 fi
 
 git pull
