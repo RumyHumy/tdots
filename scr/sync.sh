@@ -6,7 +6,7 @@ git fetch origin
 
 git status | grep -q "nothing to commit, working tree clean"
 
-if [ -n -z $? ]; then
+if ![ -z $? ]; then
     echo "[TDOTS] Nothing to sync!"
 	exit 0
 fi
