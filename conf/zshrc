@@ -56,16 +56,24 @@ echo -ne '\e[5 q' # Use beam shape cursor on startup.
 preexec() { echo -ne '\e[5 q' ;} # Use beam shape cursor for each new prompt.
 
 # Use lf to switch directories and bind it to ctrl-o
-lfcd () {
-	tmp="$(mktemp)"
-	lf -last-dir-path="$tmp" "$@"
-	if [ -f "$tmp" ]; then
-		dir="$(cat "$tmp")"
-		rm -f "$tmp"
-		[ -d "$dir" ] && [ "$dir" != "$(pwd)" ] && cd "$dir"
+#lfcd () {
+#	tmp="$(mktemp)"
+#	lf -last-dir-path="$tmp" "$@"
+#	if [ -f "$tmp" ]; then
+#		dir="$(cat "$tmp")"
+#		rm -f "$tmp"
+#		[ -d "$dir" ] && [ "$dir" != "$(pwd)" ] && cd "$dir"
+#	fi
+#}
+function yazicd() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
+	yazi "$@" --cwd-file="$tmp"
+	if cwd="$(cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+		builtin cd -- "$cwd"
 	fi
+	rm -f -- "$tmp"
 }
-bindkey -s '^o' 'yazi\n'
+bindkey -s '^o' 'yazicd\n'
 
 # Edit line in vim with ctrl-e:
 autoload edit-command-line; zle -N edit-command-line

@@ -13,5 +13,9 @@ rm ~/.config/lf/lfrc
 mkdir -p ~/.config/lf
 ln -s ~/tdots/conf/lf/lfrc ~/.config/lf/lfrc
 
+rm ~/.config/yazi/yazi.toml
+mkdir -p ~/.config/yazi
+ln -s ~/tdots/conf/yazi/yazi.toml ~/.config/yazi
+
 cd ~/tdots
 ~/tdots/scr/sync.sh
