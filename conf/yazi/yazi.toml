@@ -1,4 +1,4 @@
-[open]
-rules = [
-	{ name = "*.jpg", use = "librewolf" }
-]
+#[open]
+#rules = [
+#	{ name = "*.jpg", use = "librewolf" }
+#]
