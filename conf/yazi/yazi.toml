@@ -1,4 +1,4 @@
 [open]
 rules = [
-	{ name = "*.json", use = "edit" },
+	{ name = "*.jpg", use = "librewolf" }
 ]
