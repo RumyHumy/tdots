@@ -2,3 +2,13 @@
 #rules = [
 #	{ name = "*.jpg", use = "librewolf" }
 #]
+
+[opener]
+photo = [
+	{ run = 'librewolf "$@"', block = true, for = "unix" }
+]
+
+[open]
+prepend_rules = [
+	{ name = "*.jpg", use = "photo" },
+]
