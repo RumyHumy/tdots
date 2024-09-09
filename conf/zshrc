@@ -1,9 +1,9 @@
 # Rami's take on Luke's config for the Zoomer Shell
 # Aliases
-alias td="cd ~/tdots"
-alias tdc="cd ~/tdots/conf"
-alias tds="cd ~/tdots/scr"
-alias tdu="~/tdots/scr/update.sh"
+alias tdots="cd ~/tdots"
+alias tdotsc="cd ~/tdots/conf"
+alias tdotss="cd ~/tdots/scr"
+alias tdotsu="~/tdots/scr/update.sh"
 alias ls="ls --color=auto"
 
 # Enable colors and change prompt:
