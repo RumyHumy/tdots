@@ -1,4 +1,7 @@
 # Rami's take on Luke's config for the Zoomer Shell
+# Update repo
+~/tdots/scr/sync.sh
+
 # Aliases
 alias tdots="cd ~/tdots"
 alias tdotsc="cd ~/tdots/conf"
