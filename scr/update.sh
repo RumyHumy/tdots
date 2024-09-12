@@ -17,5 +17,8 @@ rm ~/.config/yazi/yazi.toml
 mkdir -p ~/.config/yazi
 ln -s ~/tdots/conf/yazi/yazi.toml ~/.config/yazi
 
+rm ~/.tmux.conf
+ln -s ~/tdots/conf/tmux/tmux.conf ~/.tmux.conf
+
 cd ~/tdots
 ~/tdots/scr/sync.sh
