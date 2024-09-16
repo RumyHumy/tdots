@@ -1,15 +1,20 @@
 #!/bin/bash
- 
-cd ~/tdots
 
-git status | grep -q "nothing to commit"
-
-if [ $? -eq 0 ]; then
-    echo "[TDOTS] Nothing to sync!"
-	exit 1
+if git status --porcelain | grep -q .;
+then
+	echo "[TDOTS] Commit"
+	git add *
+	git commit -am "$(date)"
+else
+	exit 0
 fi
 
-git pull
-git add *
-git commit -am "$(date)"
-git push
+git fetch origin
+
+if [[ $? -ne ]];
+then
+	echo "[TDOTS] Syncing..."
+	git pull && \
+	git push && \
+	echo "[TDOTS] Succes"
+fi
