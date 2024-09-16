@@ -11,7 +11,7 @@ fi
 
 git fetch origin
 
-if [[ $? -ne ]];
+if [[ $? -ne 0 ]];
 then
 	echo "[TDOTS] Syncing..."
 	git pull && \
