@@ -1,6 +1,6 @@
 # Rami's take on Luke's config for the Zoomer Shell
 # Update repo
-bash ~/tdots/scr/sync.sh > tdots/logs/sync.sh.log 2>&1 &
+nohup bash ~/tdots/scr/sync.sh > tdots/logs/sync.sh.log 2>&1 &
 
 # Aliases
 alias tds="cd ~/tdots"
