@@ -1,5 +1,7 @@
 #!/bin/bash
 
+cd tdots
+
 if git status --porcelain | grep -q .;
 then
 	echo "[TDOTS] Commit"
@@ -18,3 +20,5 @@ then
 else
 	exit 0
 fi
+
+cd
