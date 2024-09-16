@@ -5,8 +5,6 @@ then
 	echo "[TDOTS] Commit"
 	git add *
 	git commit -am "$(date)"
-else
-	exit 0
 fi
 
 git fetch origin
@@ -17,4 +15,6 @@ then
 	git pull && \
 	git push && \
 	echo "[TDOTS] Succes"
+else
+	exit 0
 fi
