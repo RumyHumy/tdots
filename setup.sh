@@ -1,7 +1,7 @@
 #!/bin/sh
 
 if echo $PREFIX | grep -o "com.termux"; then
-	pkg install gh neovim zsh tmux lf
+	pkg install gh neovim zsh tmux yazi
 fi
 
 git config --global user.email "Email"
