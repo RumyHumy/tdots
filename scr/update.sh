@@ -1,7 +1,5 @@
 #!/bin/bash
 
-[ ! -n "$ZSH_VERSION" ] && chsh -s /usr/bin/zsh
-
 rm ~/.zshrc
 ln -s ~/tdots/conf/zshrc ~/.zshrc
 

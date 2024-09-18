@@ -13,10 +13,8 @@ git fetch origin
 
 if [[ $? -ne 0 ]];
 then
-	echo "[TDOTS] Syncing..."
 	git pull && \
 	git push && \
-	echo "[TDOTS] Succes"
 else
 	exit 0
 fi
