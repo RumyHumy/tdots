@@ -1,5 +1,7 @@
 #!/bin/sh
 
+chsh -s /usr/bin/zsh
+
 if echo $PREFIX | grep -o "com.termux"; then
 	pkg install gh neovim zsh tmux lf
 fi
