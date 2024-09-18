@@ -2,9 +2,8 @@
 
 chsh -s /usr/bin/zsh
 
-if echo $PREFIX | grep -o "com.termux"; then
-	pkg install gh neovim zsh tmux lf
-fi
+pkg install gh neovim zsh tmux yazi
+apt install gh neovim zsh tmux yazi
 
 git config --global user.email "Email"
 git config --global user.name "Name"
