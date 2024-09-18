@@ -4,10 +4,10 @@
 
 # Aliases
 alias td="cd ~/tdots"
-alias tdc="cd ~/tdots/conf"
-alias tds="cd ~/tdots/scr"
-alias tdU="~/tdots/scr/update.sh"
-alias tdS="~/tdots/scr/sync.sh"
+alias tdconf="cd ~/tdots/conf"
+alias tdscr="cd ~/tdots/scr"
+alias tdupdate="~/tdots/scr/update.sh"
+alias tdsync="~/tdots/scr/sync.sh"
 alias ls="ls --color=auto"
 
 # Enable colors and change prompt:
