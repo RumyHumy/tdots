@@ -1,7 +1,6 @@
 #!/bin/sh
 
-pkg install gh neovim zsh tmux yazi
-sudo apt install gh neovim zsh tmux yazi
+echo "instal gh neovim zsh tmux yazi"
 
 chsh -s /bin/zsh
 
