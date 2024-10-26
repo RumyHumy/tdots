@@ -21,11 +21,11 @@ chown st
 chown dmenu
 
 cd ~/opt/dwm
-sudo make install clean
+sudo make clean install
 cd ~/opt/st
-sudo make install clean
+sudo make clean install
 cd ~/opt/dmenu
-sudo make install clean
+sudo make clean install
 
 rm ~/.xinitrc
 ln -s ~/tdots/scr/dwm/xinitrc ~/.xinitrc

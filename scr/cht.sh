@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -x
+
 cd ~/tdots/cht
 
 if [ ! $? -eq 0 ]; then
@@ -7,4 +9,10 @@ if [ ! $? -eq 0 ]; then
 	exit
 fi
 
-fzf | less
+tmp=$(mktemp)
+
+fzf > "$tmp"
+
+less `cat "$tmp"`
+
+rm "$tmp"

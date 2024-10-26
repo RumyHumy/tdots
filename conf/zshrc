@@ -3,11 +3,9 @@
 #~/tdots/scr/sync.sh > ~/tdots/logs/sync.sh.log & disown
 
 # Aliases
+alias cht="~/tdots/scr/cht.sh"
 alias td="cd ~/tdots"
-alias tdconf="cd ~/tdots/conf"
-alias tdscr="cd ~/tdots/scr"
-alias tdupdate="~/tdots/scr/update.sh"
-alias tdsync="~/tdots/scr/sync.sh"
+alias tds="~/tdots/sync.sh"
 alias ls="ls --color=auto"
 
 # Enable colors and change prompt:
