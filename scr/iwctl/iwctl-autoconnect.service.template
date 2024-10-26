@@ -1,0 +1,9 @@
+[Service]
+User=root
+WorkingDirectory=<DIR>
+ExecStart=<DIR>/connect.sh <SSID> <PASSPHRASE>
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target

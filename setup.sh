@@ -2,14 +2,28 @@
 
 set -x
 
-# PACKEGES >>>
+# What system
+system=""
 
-git config --global user.name "Khasanshin Ramil"
-git config --global user.email "khasanshin.ramil@list.ru"
+if [ -f /bin/pacman ]; then
+	system="arch-linux"
+fi
 
-# <<< PACKEGES
+if [ "$system" = "" ]; then
+	echo "Unknowns system"
+	exit
+fi
 
-# CONFIGS >>>
+# Packeges
+if [ "$system" = "arch-linux" ]; then
+	sudo pacman -S \
+		vim        \
+		neovim     \
+		tmux       \
+		zsh        \
+		github-cli \
+		fzf
+fi
 
 # NeoVim
 rm ~/.config/nvim/init.vim
@@ -19,6 +33,7 @@ ln -s ~/tdots/conf/nvim/init.vim ~/.config/nvim/init.vim
 # ZSH
 rm ~/.zshrc
 ln -s ~/tdots/conf/zshrc ~/.zshrc
+chsh -s /bin/zsh
 
 # TMUX
 ln -s ~/tdots/conf/tmux/tmux.conf ~/.tmux.conf
@@ -29,7 +44,9 @@ rm ~/.config/yazi/yazi.toml
 mkdir -p ~/.config/yazi
 ln -s ~/tdots/conf/yazi/yazi.toml ~/.config/yazi
 
-# <<< CONFIGS
+# Git
+git config --global user.name "Khasanshin Ramil"
+git config --global user.email "khasanshin.ramil@list.ru"
 
-cd ~/tdots
-~/tdots/sync.sh
+# GitHub
+gh auth login

@@ -1,0 +1,9 @@
+[Service]
+User=root
+WorkingDirectory=/home/rami/tdots/scr/iwctl
+ExecStart=/home/rami/tdots/scr/iwctl/connect.sh NoConnect 9217505896
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target
