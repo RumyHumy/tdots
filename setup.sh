@@ -4,10 +4,7 @@ set -x
 
 # What system
 system=""
-
-if [ -f /bin/pacman ]; then
-	system="arch-linux"
-fi
+[ -f /bin/pacman ] && system="arch-linux"
 
 if [ "$system" = "" ]; then
 	echo "Unknowns system"

@@ -1,7 +1,5 @@
 #!/bin/bash
 
-set -x
-
 cd ~/tdots/cht
 
 if [ ! $? -eq 0 ]; then
@@ -13,6 +11,6 @@ tmp=$(mktemp)
 
 fzf > "$tmp"
 
-less `cat "$tmp"`
+nvim `cat "$tmp"`
 
 rm "$tmp"
