@@ -1,0 +1,7 @@
+# 27.10.2024
+
+sudo pacman -S os-prober 
+/etc/default/grub
+> GRUB_DISABLE_OS_PROBER=false
+sudo os-prober
+sudo grub-mkconfig -o /boot/grub/grub.cfg

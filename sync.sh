@@ -1,5 +1,5 @@
 #!/bin/bash
-cd tdots
+cd ~/tdots
 git pull
 git add *
 git commit -am "$(date)"
