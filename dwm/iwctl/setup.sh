@@ -9,8 +9,9 @@ cat \
 	| sed "s@<PASSPHRASE>@$2@" \
 	> ./iwctl-autoconnect.service
 
-sudo cp ./iwctl-autoconnect.service /etc/systemd/system
+sudo cp "$0"/iwctl-autoconnect.service /etc/systemd/system
 
+sudo systemctl unmask iwctl-autoconnect
 sudo systemctl enable iwctl-autoconnect
 sudo systemctl start iwctl-autoconnect
-
+sudo systemctl daemon-reload

@@ -1,7 +1,7 @@
 [Service]
 User=root
 WorkingDirectory=/home/rami/tdots/dwm/iwctl
-ExecStart=/home/rami/tdots/dwm/iwctl/connect.sh NoConnect 9217505896
+ExecStart=/home/rami/tdots/dwm/iwctl/connect.sh  
 Restart=always
 RestartSec=3
 
