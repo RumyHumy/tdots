@@ -8,7 +8,6 @@ system=""
 
 if [ "$system" = "" ]; then
 	echo "Unknowns system"
-	exit
 fi
 
 # Packeges
