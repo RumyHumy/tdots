@@ -76,6 +76,9 @@ function yazicd() {
 	rm -f -- "$tmp"
 }
 bindkey -s '^o' 'yazicd\n'
+bindkey -s '^z' 'cd ..\n'
+bindkey -s '^a' 'cd '
+bindkey -s '^q' 'exit\n'
 
 # Edit line in vim with ctrl-e:
 autoload edit-command-line; zle -N edit-command-line

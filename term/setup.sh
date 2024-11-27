@@ -5,6 +5,7 @@ set -x
 # What system
 system=""
 [ -f /bin/pacman ] && system="arch-linux"
+[ $(ps -ef|grep -c com.termux ) -gt 0 ] && system="termux"
 
 if [ "$system" = "" ]; then
 	echo "Unknowns system"
